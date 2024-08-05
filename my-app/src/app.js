@@ -12,7 +12,7 @@ export const App = () => {
   const user = getUserFromServer();
 	return (
 		<div className={styles.app}>
-      <H3 title={'Приложение'} color={'red'} />
+      <H3 color={'red'}>Приложение:</H3>
       <div>Разная информация приложения</div>
       {/* Передача props */}
       {/*<User name={user.name} age={user.age} email={user.email} phone={user.phone} />*/}

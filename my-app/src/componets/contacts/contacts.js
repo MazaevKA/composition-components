@@ -4,7 +4,7 @@ import {H3} from "../h3/h3";
 export const Contacts = ({email, phone}) => {
   return (
     <div className={styles.contacts}>
-      <H3 title={'Контакты'} color={'green'} />
+      <H3 color={'green'}>Контакты:</H3>
 
       <div className={styles.item}>
         <p className={styles.item_heading}>Почта:</p>
