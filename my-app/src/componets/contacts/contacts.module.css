@@ -1,0 +1,19 @@
+.contacts {
+  font-size: 18px;
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.item {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.item_heading {
+  font-weight: bold;
+}
+
+.item_email, .item_phone {
+  text-decoration: none;
+  color: gray;
+}
