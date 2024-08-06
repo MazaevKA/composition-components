@@ -1,21 +1,21 @@
-import PropTypes from "prop-types";
-import {useState} from "react";
+import {useState} from 'react';
+import styles from './app.module.css';
 
-const Product = ({name, price, amount}) => {
-  // const [amount, setAmount] useState(1); переехало к родительскому компоненту
+const Counter = ({value, setValue}) => {
   return (
     <>
-      <div>
-        {name} - {price} руб
-      </div>
-      <div>Количество: {amount}</div>
-      <Basket amount={amount} />
+      <div>{value}</div>
+      <button onClick={() => setValue(value + 1)}>+ 1</button>
     </>
   )
-
 }
+export const App = () => {
+  const [value, setValue] = useState(0);
 
-Product.propTypes = {
-  name: PropTypes.string,
-  price: PropTypes.number,
-};
+  return (
+      <div className={StyleSheet.app}>
+        <label>Счёткчик:</label>
+        <Counter value={value} setValue={setValue} />
+      </div>
+  )
+}
